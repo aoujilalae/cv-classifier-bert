@@ -1,11 +1,16 @@
 # app/streamlit_app.py
 import streamlit as st
 import pandas as pd
+import sys
+import os
+
+# Ajouter le dossier src au PATH pour que Python trouve cv_match_bert.py
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'src'))
 
 import io
 import matplotlib.pyplot as plt
 
-from src.cv_match_bert import score_batch, score_pair
+from cv_match_bert import score_batch, score_pair
 
 st.set_page_config(page_title="Classifieur CV — Match / Pas Match", layout="wide")
 st.title("Classifieur de CV — Match / Pas Match (Sentence-BERT)")
