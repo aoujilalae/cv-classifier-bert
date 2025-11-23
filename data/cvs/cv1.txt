@@ -1,0 +1,3 @@
+Compétences : Python, Machine Learning, Git, Pandas
+Expérience : 1 an en data analysis
+Formation : Licence informatique
