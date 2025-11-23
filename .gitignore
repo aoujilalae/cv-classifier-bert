@@ -1,0 +1,20 @@
+"# Python ignore file" 
+# Ignore environment
+venv/
+ENV/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Streamlit cache
+.streamlit/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Models (si tu veux éviter gros fichiers)
+*.bin
+*.pt
